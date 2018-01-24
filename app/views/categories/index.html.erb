@@ -9,6 +9,11 @@
               <%= link_to "#{category.name}", category_path(category) %>
             </li>
             <li><small><%= pluralize(category.articles.count, 'article')%></small></li>
+            <% if logged_in? and current_user.admin? %>
+                <div class='category-actions'>
+                  <%= link_to 'Edit', edit_category_path(category), class: 'btn btn-xs btn-primary' %>
+                </div>
+            <% end %>
           </div>
         </div>
     </ul>
