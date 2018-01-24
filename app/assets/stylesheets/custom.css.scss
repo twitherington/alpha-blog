@@ -44,6 +44,7 @@ $navbar-default-bg:LightSkyBlue;
 .article-meta-details {
   border-top: 1px solid #eaeaea;
   margin-top: 15px;
+  margin-bottom: 7px;
 }
 
 .article-actions {
@@ -69,6 +70,18 @@ $navbar-default-bg:LightSkyBlue;
 .listing{
   list-style: none;
   padding-left: 0;
+}
+
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+// for PCs to display checkboxes correctly with proper widths
+.input_checkbox input {
+  width: auto !important;
 }
 
 footer {
