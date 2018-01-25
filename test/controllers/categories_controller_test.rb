@@ -12,13 +12,13 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should get new' do
-    sign_in_as(@user, "password")
+    sign_in_as(@user, 'password')
     get new_category_path
     assert_response :success
   end
 
   test 'should get show' do
-    # puts category_path(@category)
+    puts category_path(@category)
     get '/categories/show', params: { id: @category.id }
     assert_response :success
   end
